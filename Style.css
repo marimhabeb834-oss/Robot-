@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 60%;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e05500;
+}
+
+.place {
+    position: relative;
+    height: 260px;
+    background: #eee;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#robot {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 40px;
+    transition: all 1s ease;
+}
+
+.station {
+    position: absolute;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.kitchen {
+    right: 20px;
+    top: 40px;
+}
+
+.customer {
+    right: 20px;
+    bottom: 40px;
+}
+
+.obstacle {
+    left: 120px;
+    top: 110px;
+    background: #ffdada;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#status {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
