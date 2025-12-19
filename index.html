@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype | روبوت مساعد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🤖 بروتوتايب الروبوت المساعد</h1>
+    <p>تشغيل عن بعد لذوي الاحتياجات الخاصة</p>
+</header>
+
+<!-- تسجيل الدخول -->
+<section>
+    <h2>لوحة التحكم</h2>
+    <label>اسم العامل:</label><br>
+    <input type="text" id="workerName" placeholder="اكتب اسمك">
+    <br>
+    <button onclick="login()">تسجيل الدخول</button>
+    <p id="welcome"></p>
+</section>
+
+<!-- تسجيل الطلب -->
+<section>
+    <h2>تسجيل الطلب</h2>
+    <input type="text" id="order" placeholder="مثال: قهوة + ساندويتش">
+    <br>
+    <button onclick="saveOrder()">تأكيد الطلب</button>
+    <p id="orderStatus"></p>
+</section>
+
+<!-- المحاكاة -->
+<section>
+    <h2>محاكاة حركة الروبوت</h2>
+
+    <div class="place">
+        <div id="robot">🤖</div>
+
+        <div class="station kitchen">🍳 المطبخ</div>
+        <div class="station customer">🧍‍♂️ الزبون</div>
+        <div class="station obstacle">🚧 عائق</div>
+    </div>
+
+    <div class="controls">
+        <button onclick="takeOrder()">استلام</button>
+        <button onclick="goKitchen()">مطبخ</button>
+        <button onclick="deliver()">توصيل</button>
+        <button onclick="autoMode()">تشغيل تلقائي</button>
+    </div>
+
+    <p id="status"></p>
+</section>
+
+<!-- الإحصائيات -->
+<section>
+    <h2>📊 لوحة الإحصائيات</h2>
+    <p id="ordersCount">عدد الطلبات: 0</p>
+</section>
+
+<!-- التقييم -->
+<section>
+    <h2>⭐ تقييم التجربة</h2>
+    <button onclick="rate(1)">⭐</button>
+    <button onclick="rate(2)">⭐⭐</button>
+    <button onclick="rate(3)">⭐⭐⭐</button>
+    <button onclick="rate(4)">⭐⭐⭐⭐</button>
+    <button onclick="rate(5)">⭐⭐⭐⭐⭐</button>
+    <p id="ratingResult"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+  </html>
